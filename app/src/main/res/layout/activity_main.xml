@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.872"
-        tools:srcCompat="@drawable/dice_1" />
+        tools:srcCompat="@drawable/dice_1"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -32,7 +33,8 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.871"
-        tools:srcCompat="@drawable/dice_1" />
+        tools:srcCompat="@drawable/dice_1"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/button"
@@ -42,7 +44,15 @@
         android:layout_marginTop="450dp"
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="150dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="15"
+        android:shadowDy="15"
         android:text="@string/roll"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:backgroundTint="#45D64A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
