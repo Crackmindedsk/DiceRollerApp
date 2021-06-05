@@ -6,7 +6,6 @@
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="50dp"
     tools:context=".MainActivity">
 
     <ImageView
@@ -55,6 +54,11 @@
     <com.google.android.gms.ads.AdView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ad_view"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
