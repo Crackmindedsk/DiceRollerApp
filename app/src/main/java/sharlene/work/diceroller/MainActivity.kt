@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //Smart Banner from admob
         MobileAds.initialize(this){}
         madView=findViewById(R.id.ad_view)
         val adRequest=AdRequest.Builder().build()
