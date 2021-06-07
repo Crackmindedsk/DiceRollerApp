@@ -4,9 +4,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAds
 import sharlene.work.diceroller.R.id.button
 
 /**
@@ -15,16 +12,9 @@ import sharlene.work.diceroller.R.id.button
  */
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var madView:AdView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        //Smart Banner from admob
-        MobileAds.initialize(this){}
-        madView=findViewById(R.id.ad_view)
-        val adRequest=AdRequest.Builder().build()
-        madView.loadAd(adRequest)
 
         val rollButton: Button = findViewById(button)
         rollButton.setOnClickListener { rollDice() }
